@@ -137,6 +137,44 @@ header nav .hamburguesa div{
 /*FIN HEADER*/
 
 
+
+/*FOOTER*/
+
+footer{
+
+    position: relative;
+    margin: 10% auto; /*para que el footer no pasa encima del header*/
+}
+
+
+footer .flecha a{
+
+    color: var(--colorprincipal);
+    font-size: 200%;
+     
+}
+
+footer .flecha{
+
+    float: right;
+    top: -40px;
+    right: 0px;
+    position: absolute;
+}
+
+
+.footer-bottom{
+    
+    padding: var(--margingrid) 0px;
+    text-align: center;
+    color: white;
+    background-color: var(--colorsegundario);
+}
+
+
+/*FIN FOOTER*/
+
+
 /*MEDIA QUERIES*/
 
 @media(min-width:768px){ 
@@ -177,4 +215,6 @@ header nav .hamburguesa div{
         border: none;
         padding: 0.5em calc(var(--margingrid));
     }
+
+
 }

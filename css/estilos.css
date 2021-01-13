@@ -175,7 +175,7 @@ footer a:hover{
     display: block;
     color: var(--colorprincipal);
     position: fixed;
-    bottom: 60px;
+    bottom: 3%;
     right: 10px;
     font-size: 250%;
 }

@@ -233,12 +233,14 @@ main section .underline span {
 main .grid{
 
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--margingrid);
 }
 
 main .grid article{
 
     padding: calc(var(--margingrid)*2) 0;
-   
+
 }
 
 main .grid article div i{
@@ -260,6 +262,8 @@ main section article h4 {
 
     font-weight: bold;
     color: var(--colorprincipal);
+    margin: 10px 0;
+  
 
 }
 

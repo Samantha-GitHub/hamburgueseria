@@ -307,6 +307,52 @@ main section .underline span {
     font-weight: 700;
 }
 
+
+main #our-services .grid{
+
+    display: grid;
+}
+
+main #our-services .grid article{
+
+    padding: calc(var(--margingrid)*2) 0;
+    border-bottom: 1px solid #aaa;
+}
+
+main #our-services .grid article div i{
+
+    color: var(--colorprincipal);
+    font-size: 150%;
+    border: 1px solid var(--colorprincipal);
+    padding: 0.5em;
+}
+
+main #our-services .grid article h3{
+
+    font-weight: 700;
+    margin: 10px 0;
+    font-size: 110%;
+}
+
+main section p{
+
+    color: #aaa;
+    line-height: 1.25;
+    margin-bottom: 10px;
+}
+
+.enlace{
+
+    text-decoration: none;
+    color: var(--colorprincipal);
+}
+
+.fa-truck{
+
+    transform: rotateY(180deg);
+}
+
+
 /*FIN Our Services*/
 
 
@@ -314,6 +360,34 @@ main section .underline span {
 
 
 /*MEDIA QUERIES*/
+
+@media(min-width:600px){ 
+
+    main #our-services .grid{
+
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--margingrid);
+    }
+
+    main #our-services .grid article:last-child{
+
+        grid-column: 1/3;
+    }
+
+    main #our-services .grid article{
+
+        border-bottom: 0px;
+        border-left: 1px solid #aaa;
+        padding: var(--margingrid);
+    }
+
+    main section{
+
+        padding: calc(var(--margingrid)*3) var(--margingrid) calc(var(--margingrid)*5) var(--margingrid);
+    }
+
+    
+}
 
 @media(min-width:768px){ 
 
@@ -332,6 +406,18 @@ main section .underline span {
 
         text-align: left;
     }
+
+    main #our-services .grid{
+
+        grid-template-columns: repeat(3, 1fr);
+      
+    }
+
+    main #our-services .grid article:last-child{
+
+        grid-column: 3/4;
+    }
+
 }
 
 @media(min-width:1004px){ 

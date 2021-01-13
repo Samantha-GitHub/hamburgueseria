@@ -456,7 +456,7 @@ main #about-us .imagen:hover .marco img{
     
 }
 
-@media(min-width:768px){ 
+@media(min-width:768px){ /*Cambio de 3columnas a 2 en BLOG y punto de cambio para otra parte tambien*/
 
     header .nav-top a span{
     

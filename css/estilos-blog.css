@@ -243,11 +243,10 @@ main .grid article{
 
 }
 
-main .grid article div i{
+main .grid article .div i{
 
     color: var(--colorprincipal);
     font-size: 150%;
-    border: 1px solid var(--colorprincipal);
     padding: 0.5em;
 }
 
@@ -279,6 +278,12 @@ main section p{
     text-decoration: none;
     color: var(--colorprincipal);
     font-weight: bold
+}
+
+
+.div{
+
+    margin: 0 var(--margingrid);
 }
 
 

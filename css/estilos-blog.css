@@ -286,9 +286,27 @@ main section p{
     margin: 0 var(--margingrid);
 }
 
+.grid article div:first-child {
+
+    position: relative;
+}
+
+.grid article div:first-child p{
+
+    position: absolute;
+    color: white;    
+    font-weight: 600;
+    padding: 0.5em 0.75em ;
+    text-align: center;
+    background-color: #d33d23d5; 
+    top: 0;
+}
+
 
 /*FIN MAIN*/
 
+
+/*No consigo hacer responsive el .grid article div:first-child p */
 
 
 
@@ -316,6 +334,13 @@ main section p{
     footer{
 
         text-align: left;
+    }
+
+    main .grid{
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: var(--margingrid);
     }
 
 

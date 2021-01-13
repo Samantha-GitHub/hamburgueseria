@@ -13,6 +13,8 @@
 html{
 
     scroll-behavior: smooth;
+    position: relative;
+    min-height: 100%;
 }
 
 img{
@@ -136,43 +138,42 @@ header nav .hamburguesa div{
 }
 /*FIN HEADER*/
 
-
-
-/*FOOTER*/
+/*INICIO FOOTER*/
 
 footer{
 
-    position: relative;
-    margin: 10% auto; /*para que el footer no pasa encima del header*/
+    background-color: var(--colorsegundario);
+    padding: var(--margingrid) 0px;
+    color: white;
+    text-align: center;
+    position: absolute;
+    width: 100%;    
+    bottom: 0;
 }
 
+footer a{
 
-footer .flecha a{
+    color:white;
+    text-decoration: none;
+}
+
+footer a:hover{
 
     color: var(--colorprincipal);
-    font-size: 200%;
-     
 }
 
-footer .flecha{
+.flecha a{
 
-    float: right;
-    top: -40px;
-    right: 0px;
-    position: absolute;
+    display: block;
+    color: var(--colorprincipal);
+    position: fixed;
+    bottom: 60px;
+    right: 10px;
+    font-size: 250%;
 }
-
-
-.footer-bottom{
-    
-    padding: var(--margingrid) 0px;
-    text-align: center;
-    color: white;
-    background-color: var(--colorsegundario);
-}
-
 
 /*FIN FOOTER*/
+
 
 
 /*MEDIA QUERIES*/
@@ -188,6 +189,11 @@ footer .flecha{
     header .nav-top a i{
 
         font-size: 120%;
+    }
+
+    footer{
+
+        text-align: left;
     }
 }
 

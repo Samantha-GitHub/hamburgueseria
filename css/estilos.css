@@ -265,10 +265,10 @@ footer a:hover{
 
 /*INICIO Our Services*/
 
-main section{
-
+main section {
     padding: calc(var(--margingrid)*3) var(--margingrid);
 }
+
 
 main section h2{
 
@@ -355,6 +355,56 @@ main section p{
 
 /*FIN Our Services*/
 
+/* INICIO About us */
+
+main #about-us .flex .column{
+
+    margin: var(--margingrid);
+}
+
+main #about-us .column h3{
+
+    font-weight: 700;
+    font-size: 110%;  
+}
+
+main #about-us .column h4{
+
+    margin: 0.8em 0;
+   color: var(--colorprincipal); 
+
+   
+}
+
+main #about-us .imagen{
+
+    width: 90%;
+    margin: 0 auto;
+}
+
+main #about-us .imagen .marco{
+
+    border: 3px solid var(--colorprincipal);
+    transform: rotateZ(10deg);
+    transition: 1s;
+}
+
+
+main #about-us .imagen .marco img{
+
+    transform: rotateZ(-10deg);
+    transition: 1s;
+
+}
+
+main #about-us .imagen:hover .marco, 
+main #about-us .imagen:hover .marco img{
+
+    transform: rotateZ(0deg);
+}
+
+/* FIN About Uu */
+
 
 
 
@@ -381,9 +431,26 @@ main section p{
         padding: var(--margingrid);
     }
 
-    main section{
+   /*  main section{
 
         padding: calc(var(--margingrid)*3) var(--margingrid) calc(var(--margingrid)*5) var(--margingrid);
+    } */
+
+    main section {
+        padding: calc(var(--margingrid)*3) var(--margingrid);
+    }
+    
+    main #about-us .flex {
+
+        display: flex;
+    }
+
+    main #about-us .imagen{
+
+        width: 80%;      
+    }
+    main #about-us{
+        margin-bottom: 2em;
     }
 
     

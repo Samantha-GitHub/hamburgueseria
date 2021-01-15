@@ -286,7 +286,6 @@ main .grid article h3{
 
     font-weight: 700;
     margin: 10px 0;
-    font-size: 110%;
     color: white;
 }
 
@@ -311,6 +310,21 @@ main section p{
     margin: 0 var(--margingrid);
 }
 
+.div article div{
+
+    position: relative;
+    
+}
+
+.div article div p:last-child{
+
+    position: absolute;
+    color: var(--colorprincipal);
+    font-weight: bold;
+    right: 0;
+    top:0;
+    
+}
 
 
 

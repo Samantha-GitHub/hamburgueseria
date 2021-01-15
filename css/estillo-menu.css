@@ -187,6 +187,7 @@ footer a:hover{
 /*MAIN*/
 
 main section {
+    
     padding: calc(var(--margingrid)*3) var(--margingrid);
     background-color: var(--colorsegundario);
    
@@ -260,7 +261,7 @@ main .grid div nav ul li a.activo{
     background-color: var(--colorprincipal);
 }
 
- main .grid article{
+ main .grid div article{
 
     padding: calc(var(--margingrid)*2) 0;
 
@@ -292,7 +293,7 @@ main section p{
 
     color: #aaa;
     line-height: 1.25;
-    margin-bottom: 10px;
+  
 }     
 
 .enlace{
@@ -341,7 +342,7 @@ main section p{
 /*MEDIA QUERIES*/
 
 
-@media(min-width:600px){ 
+@media(max-width:767px){ 
 
 .segunda_columna section p{
 
@@ -391,22 +392,21 @@ main section p{
 
         color: var(--colorprincipal);
         font-weight: bold;
-        position: static !important;
-    }
-
-
-    .div article div{
-
-        position: static !important;
         
-    }
+       }
 
     .div article div p:last-child{
 
-       
-        visibility: hidden;
+      display: none;
         
     }
+
+    
+
+
+    
+
+    
 
 
 }

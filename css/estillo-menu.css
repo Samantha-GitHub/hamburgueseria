@@ -188,12 +188,14 @@ footer a:hover{
 
 main section {
     padding: calc(var(--margingrid)*3) var(--margingrid);
+    background-color: var(--colorsegundario);
+    color: white;
 }
 
 
 main section h2{
 
-    color: black;
+    
     font-family: var(--fuentetercera);
     font-size: 2em;
     font-weight: bold;
@@ -211,6 +213,7 @@ main section .underline{
     width: 100px;
     margin:0 auto;
     text-align: center;
+    margin-top: var(--margingrid);
     margin-bottom: var(--margingrid);
     
 }
@@ -229,6 +232,106 @@ main section .underline span {
     font-weight: 700;
 }
 
+main .grid{
+
+    display: grid;
+    font-size: 0.90em;
+    
+}
+
+main .grid div nav ul li{
+    margin: 0.5em;
+}
+
+
+main .grid div nav ul li a{
+
+    text-decoration: none ;
+    color: white;
+    display: block;
+    padding: 0.50em;
+}
+
+main .grid div nav ul li:last-child{
+
+  margin-bottom: 2.5em ;
+
+  
+}
+
+main .grid div nav ul li a.activo{
+
+   
+    border-radius: 3%;
+    background-color: var(--colorprincipal);
+}
+
+
+/* main .grid article{
+
+    padding: calc(var(--margingrid)*2) 0;
+
+}
+
+main .grid article .div i{
+
+    color: var(--colorprincipal);
+    font-size: 150%;
+    padding: 0.5em;
+}
+
+main .grid article h3{
+
+    font-weight: 700;
+    margin: 10px 0;
+    font-size: 110%;
+}
+
+main section article h4 {
+
+    font-weight: bold;
+    color: var(--colorprincipal);
+    margin: 10px 0;
+  
+
+}
+
+main section p{
+
+    color: #aaa;
+    line-height: 1.25;
+    margin-bottom: 10px;
+}     
+
+.enlace{
+
+    text-decoration: none;
+    color: var(--colorprincipal);
+    font-weight: bold
+}
+
+
+.div{
+
+    margin: 0 var(--margingrid);
+}
+
+.grid article div:first-child {
+
+    position: relative;
+}
+
+.grid article div:first-child p{
+
+    position: absolute;
+    color: white;    
+    font-weight: 600;
+    padding: 0.5em 0.75em ;
+    text-align: center;
+    background-color: #d33d23d5; 
+    top: 0;
+} */
+
 
 
 
@@ -236,7 +339,7 @@ main section .underline span {
 /*FIN MAIN*/
 
 
-/*No consigo hacer responsive el .grid article div:first-child p */
+
 
 
 
@@ -269,7 +372,7 @@ main section .underline span {
     main .grid{
 
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: (1fr, 2fr);
         gap: var(--margingrid);
     }
 

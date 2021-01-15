@@ -253,12 +253,7 @@ main .grid div nav ul li a{
     padding: 0.50em;
 }
 
-main .grid div nav ul li:last-child{
 
-  margin-bottom: 2.5em ;
-
-  
-}
 
 main .grid div nav ul li a.activo{
 
@@ -267,33 +262,25 @@ main .grid div nav ul li a.activo{
     background-color: var(--colorprincipal);
 }
 
-/* AQUIIIII */
-
-
  main .grid article{
 
     padding: calc(var(--margingrid)*2) 0;
 
 }
 
-main .grid nav article{
+.article_hr{
 
     position: relative;
 }
 
-main .grid article hr{
+.article_hr hr{
 
     width: 50px;
     border-color: var(--colorprincipal);
     position: absolute;    
 }
 
-main .grid article .div i{
 
-    color: var(--colorprincipal);
-    font-size: 150%;
-    padding: 0.5em;
-}
 
 main .grid article h3{
 
@@ -323,23 +310,6 @@ main section p{
 
     margin: 0 var(--margingrid);
 }
-
-.grid article div:first-child {
-
-    position: relative;
-}
-
-.grid article div:first-child p{
-
-    position: absolute;
-    color: white;    
-    font-weight: 600;
-    padding: 0.5em 0.75em ;
-    text-align: center;
-    background-color: #d33d23d5; 
-    top: 0;
-} 
-
 
 
 
